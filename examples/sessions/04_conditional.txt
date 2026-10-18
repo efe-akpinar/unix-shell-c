@@ -1,0 +1,14 @@
+shell$ (cat courses.txt ? echo "file opened" : echo "error")
+cs
+math
+cs
+file opened
+shell$ (cat missing.txt ? echo "file opened" : echo "error")
+cat: missing.txt: No such file or directory
+error
+shell$ (grep "cs" courses.txt ? echo "found" : echo "not found")
+cs
+cs
+found
+shell$ exit
+Exiting shell...

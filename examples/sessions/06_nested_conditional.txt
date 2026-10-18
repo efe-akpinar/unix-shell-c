@@ -1,0 +1,20 @@
+shell$ (cat courses.txt ? (cat courses.txt ? echo "inner ok" : echo "inner fail") : echo "outer fail")
+cs
+math
+cs
+cs
+math
+cs
+inner ok
+shell$ (cat missing.txt ? echo "outer ok" : (cat courses.txt ? echo "recovered" : echo "still bad"))
+cat: missing.txt: No such file or directory
+cs
+math
+cs
+recovered
+shell$ (cat missing.txt ? echo "outer ok" : (cat missing2.txt ? echo "recovered" : echo "final fail"))
+cat: missing.txt: No such file or directory
+cat: missing2.txt: No such file or directory
+final fail
+shell$ exit
+Exiting shell...

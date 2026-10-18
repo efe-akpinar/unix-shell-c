@@ -1,0 +1,22 @@
+# Build output
+/shell
+*.o
+*.out
+*.dSYM/
+
+# Files written by the example sessions
+examples/output*.txt
+examples/count.txt
+
+# Secrets
+.env
+
+# OS and editor files
+.DS_Store
+__MACOSX/
+.vscode/
+.idea/
+
+# Local tool settings
+.claude/
+CLAUDE.md

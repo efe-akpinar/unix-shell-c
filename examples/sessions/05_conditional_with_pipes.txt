@@ -1,0 +1,15 @@
+shell$ (cat courses.txt ? grep cs courses.txt | wc -l : echo "error")
+cs
+math
+cs
+2
+shell$ (cat missing.txt ? grep cs courses.txt | wc -l : echo "error")
+cat: missing.txt: No such file or directory
+error
+shell$ (cat input1.txt ? cat input1.txt | wc -l : echo "bad input")
+alpha
+beta
+gamma
+3
+shell$ exit
+Exiting shell...

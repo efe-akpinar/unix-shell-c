@@ -1,0 +1,13 @@
+shell$ (cat ? echo "ok" : echo "bad") < input2.txt
+red
+blue
+red
+ok
+shell$ (cat missing.txt ? echo "ok" : echo "bad") > output2.txt
+cat: missing.txt: No such file or directory
+shell$ (cat input2.txt ? grep red input2.txt | wc -l : echo "error") > output3.txt
+red
+blue
+red
+shell$ exit
+Exiting shell...

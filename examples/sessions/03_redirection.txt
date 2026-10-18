@@ -1,0 +1,10 @@
+shell$ cat < input1.txt
+alpha
+beta
+gamma
+shell$ wc -l < input1.txt
+3
+shell$ echo "written to file" > output1.txt
+shell$ wc -l < input1.txt > count.txt
+shell$ exit
+Exiting shell...

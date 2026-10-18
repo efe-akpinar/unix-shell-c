@@ -1,0 +1,10 @@
+shell$ echo hello | wc -c
+6
+shell$ seq 1 5 | tail -n 3 | wc -l
+3
+shell$ cat courses.txt | grep cs | wc -l
+2
+shell$ echo "abcdef" | rev
+fedcba
+shell$ exit
+Exiting shell...
